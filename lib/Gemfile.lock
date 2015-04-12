@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    json (1.8.2)
+    minitest (5.5.1)
+    openssl (1.0.0.beta)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  json
+  minitest
+  openssl
