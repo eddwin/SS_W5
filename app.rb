@@ -53,9 +53,13 @@ class CreditCardAPI < Sinatra::Base
 
   get '/api/v1/all_cc' do
     card = CreditCard.all
-    card.to_json
+    if card.empty?
+      halt 500, 'No data'
+    else
+      card = CreditCard.all
+      card.to_json
+      return 200
+    end
   end
-
-
-
+  
 end
